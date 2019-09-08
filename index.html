@@ -12,7 +12,12 @@
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 <style>
-.grid-item{
+.image-grid{
+    display:grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: 5px;
+}
+.image-item{
    width:100%;
 }
 </style>
@@ -43,13 +48,13 @@ https://certapro.com/paint-color-ideas/
 </p>
 <br/><br/><br/>
 <hr>
-<div style="display:grid;grid-template-columns: repeat(4, 25%)">
-<img src="1.jpg" class="grid-item">
-<img src="2.jpg" class="grid-item">
-<img src="3.jpg" class="grid-item">
-<img src="4.jpg" class="grid-item">
-<img src="5.jpg" class="grid-item">
-<img src="6.jpg" class="grid-item">
+<div class="image-grid">
+<img src="1.jpg" class="image-item">
+<img src="2.jpg" class="image-item">
+<img src="3.jpg" class="image-item">
+<img src="4.jpg" class="image-item">
+<img src="5.jpg" class="image-item">
+<img src="6.jpg" class="image-item">
 </div>
 <script type="text/javascript">
 var sc_project=10449297; 
